@@ -30,16 +30,16 @@ var TaskSchema = new Schema({
 
   priority: [{
     type: String, 
-    enum: ['1', '2', '3'], 
-    required: false}] 
+    enum: ['Low', 'Medium', 'High'], 
+    required: false}],
   
  
-  // note: [{
-  //   type: Schema.Types.ObjectId,
-  //   ref: "Note"
-  // }]
+  user: [{
+    type: Schema.Types.ObjectId,
+    ref: "user"
+  }]
 });
 
-var Task = mongoose.model("Task", TaskSchema);
+var Task = mongoose.model("task", TaskSchema);
 
 module.exports = Task;
