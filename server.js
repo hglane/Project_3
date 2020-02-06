@@ -4,6 +4,8 @@ const helmet = require('helmet');
 const cors = require('cors');
 const session = require('express-session');
 
+mongodb://user:password1@ds035517.mlab.com:35517/heroku_fj6klq23
+
 const db = require('./models');
 const routes = require('./routes');
 const passport = require('./config/passport');
