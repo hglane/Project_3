@@ -19,8 +19,8 @@ function Navbar() {
       </li>
       <li className="nav-item">
         <Link
-          to="/task-bank"
-          className={window.location.pathname === "/task-bank" ? "nav-link active" : "nav-link"}
+          to="/tasks"
+          className={window.location.pathname === "/tasks" ? "nav-link active" : "nav-link"}
         >
           Task Bank
         </Link>
