@@ -1,9 +1,14 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Wrapper from "./components/Wrapper";
+// import Wrapper from "./components/Wrapper";
 // import TaskBank from "./components/TaskBank";
 // import TaskList from "./components/TaskList";
+import Calendar from "./pages/calendar";
+// import Dashboard from "./pages/dashboard";
+import TaskBank from "./pages/taskBank";
+import PomodoroTimer from "./pages/pomodoroTimer";
+import UserStats from "./pages/userStats";
 import './App.css';
 
 class App extends Component {
@@ -13,13 +18,14 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
-          <Wrapper>
-            <div>Temporary Div in place of Routes</div>
-            {/* <Route exact path="/" component={Calendar} />
+            
+            <Route exact path="/" component={Calendar} />
+            {/* <Route exact path="/dashboard" component={Dashboard} /> */}
             <Route exact path="/tasks" component={TaskBank} />
-            <Route exact path="/tasks" component={TaskBank} />
-            <Route exact path="/tasks" component={TaskBank} /> */}
-          </Wrapper>
+            <Route exact path="/timer" component={PomodoroTimer} />
+            <Route exact path="/stats" component={UserStats} />
+
+          
         </div>
       </Router>
     )
