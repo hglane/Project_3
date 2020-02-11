@@ -1,21 +1,25 @@
 import React from 'react'
+class TaskList extends React.Component {
 
-const TaskList = React.createClass({
   render () {
-    const { task, remove, taskId } = this.props;
+    // const { task, remove, taskId } = this.props;
+  const task= "herro"
+
     return (
 
-      <div>Hi!</div>
-        // <tr>
-        //   <td>{task}</td>
-        // <td><button className="btn btn-danger btn-xs" onClick={() => {remove(taskId)}} >x</button></td>
-        // {/* <td><button className="btn btn-danger btn-xs" onClick={() => {inProgress(taskId)}} >In Progress</button></td> */}
-        // {/* <td><button className="btn btn-danger btn-xs" onClick={() => add} >x</button></td>
-        // <td><button className="btn btn-danger btn-xs" onClick={() => add} >x</button></td> */}
+      <div>{task}</div>
+      // <tr>
+      //   <td>{task}</td>
+      //   {/* <td><button className="btn btn-danger btn-xs" onClick={() => {remove(taskId)}} >x</button></td> */}
+      //   <td><button className="btn btn-danger btn-xs" >x</button></td>
 
-        // </tr>
+      // </tr>
     )
-  }
-});
+  }}
+// });
 
 export default TaskList;
+
+{/* // <td><button className="btn btn-danger btn-xs" onClick={() => {inProgress(taskId)}} >In Progress</button></td> */}
+        // {/* <td><button className="btn btn-danger btn-xs" onClick={() => add} >x</button></td>
+        // <td><button className="btn btn-danger btn-xs" onClick={() => add} >x</button></td> */}
