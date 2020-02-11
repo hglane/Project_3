@@ -1,4 +1,4 @@
-import React from 'react'
+import React from '../client/src/react'
 
 const TaskList = React.createClass({
   render () {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from '../client/src/react';
 import TaskBank from "./components/TaskBank";
 // import TaskList from "./components/TaskList";
 import './App.css';
