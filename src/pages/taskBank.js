@@ -1,18 +1,16 @@
 import React from "react";
+import TaskBank from "../components/TaskBank/TaskBank"
 
-
-function TaskBank() {
+function taskBank() {
     return (
       <div>
-        <h1>Task Bank</h1>
-        <p>
-          Switch to code below once components are completed
-        </p>
+       <TaskBank/>
+        
       </div>
     );
   }
   
-  export default TaskBank;
+  export default taskBank;
 
 
 
