@@ -3,8 +3,8 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var TaskSchema = new Schema({
-  taskTitle: {
-    type: String,
+  taskItem: {
+    type: Array,
     required: true
   },
 //    summary: {
